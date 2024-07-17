@@ -67,50 +67,54 @@ export class DotaService {
                 (error)=>{
               console.log(error)
               resolve({
-                "solo_competitive_rank": "PRIVATE",
-                "competitive_rank": "PRIVATE",
+                "profile": {
+                "account_id": "PRIVATE",
+                "personaname": "PRIVATE",
+                "name": null,
+                "plus": "PRIVATE",
+                "cheese": "PRIVATE",
+                "steamid": "PRIVATE",
+                "avatar": "PRIVATE",
+                "avatarmedium": "PRIVATE",
+                "avatarfull": "PRIVATE",
+                "profileurl": "PRIVATE",
+                "last_login": "PRIVATE",
+                "loccountrycode": "PRIVATE",
+                "status": "PRIVATE",
+                "fh_unavailable": "PRIVATE",
+                "is_contributor": "PRIVATE",
+                "is_subscriber": "PRIVATE"
+                },
                 "rank_tier": "PRIVATE",
-                "leaderboard_rank": "PRIVATE",
-                "profile_account_id": "PRIVATE",
-                "profile_personaname": "PRIVATE",
-                "profile_name": null,
-                "profile_plus": "PRIVATE",
-                "profile_cheese": "PRIVATE",
-                "profile_steamid": "PRIVATE",
-                "profile_avatar": "PRIVATE",
-                "profile_avatarmedium": "PRIVATE",
-                "profile_avatarfull": "PRIVATE",
-                "profile_profileurl": "PRIVATE",
-                "profile_last_login": "PRIVATE",
-                "profile_loccountrycode": "PRIVATE",
-                "profile_is_contributor": "PRIVATE",
-                "profile_is_subscriber": "PRIVATE",
-                "Medal": "PRIVATE"
-            })
+                "leaderboard_rank": "PRIVATE"
+                })
              }
 
 
               );
             }catch{
-              resolve({    "solo_competitive_rank": "PRIVATE",
-                "competitive_rank": "PRIVATE",
+              resolve({
+                "profile": {
+                "account_id": "PRIVATE",
+                "personaname": "PRIVATE",
+                "name": null,
+                "plus": "PRIVATE",
+                "cheese": "PRIVATE",
+                "steamid": "PRIVATE",
+                "avatar": "PRIVATE",
+                "avatarmedium": "PRIVATE",
+                "avatarfull": "PRIVATE",
+                "profileurl": "PRIVATE",
+                "last_login": "PRIVATE",
+                "loccountrycode": "PRIVATE",
+                "status": "PRIVATE",
+                "fh_unavailable": "PRIVATE",
+                "is_contributor": "PRIVATE",
+                "is_subscriber": "PRIVATE"
+                },
                 "rank_tier": "PRIVATE",
-                "leaderboard_rank": "PRIVATE",
-                "profile_account_id": "PRIVATE",
-                "profile_personaname": "PRIVATE",
-                "profile_name": null,
-                "profile_plus": "PRIVATE",
-                "profile_cheese": "PRIVATE",
-                "profile_steamid": "PRIVATE",
-                "profile_avatar": "PRIVATE",
-                "profile_avatarmedium": "PRIVATE",
-                "profile_avatarfull": "PRIVATE",
-                "profile_profileurl": "PRIVATE",
-                "profile_last_login": "PRIVATE",
-                "profile_loccountrycode": "PRIVATE",
-                "profile_is_contributor": "PRIVATE",
-                "profile_is_subscriber": "PRIVATE",
-                "Medal": "PRIVATE"})
+                "leaderboard_rank": "PRIVATE"
+                })
 
             }
             
