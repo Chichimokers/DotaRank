@@ -18,7 +18,7 @@ export class PlayerController {
 
     playerInfo.forEach((item)=>{
       this.DotaServices.getRankName(item.rank_tier).then((medal)=>{
-        item["Medal"] = medal;
+        item["Medal"] = medal.toString();
       })
     })
 
