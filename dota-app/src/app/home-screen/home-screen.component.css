@@ -7,3 +7,28 @@
   padding: 10px;
 
 }
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+}
+
+/* Estilo para el router-outlet, puedes ajustarlo según sea necesario */
+.flex {
+  width: 100%;
+  max-width: 1200px; /* Ajusta este valor según tus necesidades */
+}

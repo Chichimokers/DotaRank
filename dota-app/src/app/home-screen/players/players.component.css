@@ -4,8 +4,8 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   padding: 10px;
   margin-bottom: 10px;
-  width: 800px ;
-  height: 78px;
+  width: 100%; /* Cambiamos el ancho fijo por uno relativo */
+  height: auto; /* Hacemos la altura adaptable */
 }
 
 .profile {
@@ -18,4 +18,23 @@
 .player span {
   font-size: 18px;
   font-weight: bold;
+}
+
+/* Media query para dispositivos pequeños */
+@media (max-width: 600px) {
+  .player {
+    flex-direction: column; /* Cambiamos la dirección de los elementos internos a columna */
+  }
+
+  .profile {
+    width: 30px; /* Reducimos el tamaño de la imagen para pantallas pequeñas */
+    height: 30px;
+  }
+}
+
+/* Media query para dispositivos medianos */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .player {
+    flex-direction: row; /* Volvemos a colocar los elementos en línea */
+  }
 }

@@ -11,5 +11,10 @@ export class AngularAPpControllers {
     const indexHtml = join(__dirname,'..', 'angular-app');
     res.sendFile(indexHtml+"/index.html");
   }
+  @Get('home/default')
+  serveAngularApp(@Res() res: Response) {
+    const indexHtml = join(__dirname,'..', 'angular-app');
+    res.sendFile(indexHtml+"/index.html");
+  }
 
 }

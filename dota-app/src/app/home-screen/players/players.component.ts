@@ -14,10 +14,10 @@ export class PLayersComponent implements OnInit {
   medas: Dictionary<string>={
     'Herald':"/assets/medal_1.png",
     'Guardian':"/assets/medal_2.png",
-    'Cruzader':'/assets/medal_3.png',
+    'Crusader':'/assets/medal_3.png',
     'Archon':'/assets/medal_4.png',
     'Legend':'/assets/medal_5.png',
-    'Ancestral':'/assets/medal_6.png',
+    'Ancient':'/assets/medal_6.png',
     'Divine':'/assets/medal_7.png',
   }
 
@@ -43,7 +43,70 @@ export class PLayersComponent implements OnInit {
     this.setmedaimage();
   })
 
-  /*this.players=[
+  /*this.players=[ {
+    "id": 4,
+    "solo_competitive_rank": null,
+    "competitive_rank": null,
+    "rank_tier": 21,
+    "leaderboard_rank": null,
+    "profile_account_id": "1104590909",
+    "profile_personaname": "NeoxaFS.Chichimokers Repeat.gg",
+    "profile_name": null,
+    "profile_plus": false,
+    "profile_cheese": 0,
+    "profile_steamid": "76561199064856637",
+    "profile_avatar": "https://avatars.steamstatic.com/b957f6ebf21ddd31783997bf16ea6aa54bed6b78.jpg",
+    "profile_avatarmedium": "https://avatars.steamstatic.com/b957f6ebf21ddd31783997bf16ea6aa54bed6b78_medium.jpg",
+    "profile_avatarfull": "https://avatars.steamstatic.com/b957f6ebf21ddd31783997bf16ea6aa54bed6b78_full.jpg",
+    "profile_profileurl": "https://steamcommunity.com/profiles/76561199064856637/",
+    "profile_last_login": "2024-07-15T19:19:19.548Z",
+    "profile_loccountrycode": "US",
+    "profile_is_contributor": false,
+    "profile_is_subscriber": false,
+    "Medal": "Guardian [1]"
+  }, {
+    "id": 4,
+    "solo_competitive_rank": null,
+    "competitive_rank": null,
+    "rank_tier": 21,
+    "leaderboard_rank": null,
+    "profile_account_id": "1104590909",
+    "profile_personaname": "NeoxaFS.Chichimokers Repeat.gg",
+    "profile_name": null,
+    "profile_plus": false,
+    "profile_cheese": 0,
+    "profile_steamid": "76561199064856637",
+    "profile_avatar": "https://avatars.steamstatic.com/b957f6ebf21ddd31783997bf16ea6aa54bed6b78.jpg",
+    "profile_avatarmedium": "https://avatars.steamstatic.com/b957f6ebf21ddd31783997bf16ea6aa54bed6b78_medium.jpg",
+    "profile_avatarfull": "https://avatars.steamstatic.com/b957f6ebf21ddd31783997bf16ea6aa54bed6b78_full.jpg",
+    "profile_profileurl": "https://steamcommunity.com/profiles/76561199064856637/",
+    "profile_last_login": "2024-07-15T19:19:19.548Z",
+    "profile_loccountrycode": "US",
+    "profile_is_contributor": false,
+    "profile_is_subscriber": false,
+    "Medal": "Guardian [1]"
+  }, {
+    "id": 4,
+    "solo_competitive_rank": null,
+    "competitive_rank": null,
+    "rank_tier": 21,
+    "leaderboard_rank": null,
+    "profile_account_id": "1104590909",
+    "profile_personaname": "NeoxaFS.Chichimokers Repeat.gg",
+    "profile_name": null,
+    "profile_plus": false,
+    "profile_cheese": 0,
+    "profile_steamid": "76561199064856637",
+    "profile_avatar": "https://avatars.steamstatic.com/b957f6ebf21ddd31783997bf16ea6aa54bed6b78.jpg",
+    "profile_avatarmedium": "https://avatars.steamstatic.com/b957f6ebf21ddd31783997bf16ea6aa54bed6b78_medium.jpg",
+    "profile_avatarfull": "https://avatars.steamstatic.com/b957f6ebf21ddd31783997bf16ea6aa54bed6b78_full.jpg",
+    "profile_profileurl": "https://steamcommunity.com/profiles/76561199064856637/",
+    "profile_last_login": "2024-07-15T19:19:19.548Z",
+    "profile_loccountrycode": "US",
+    "profile_is_contributor": false,
+    "profile_is_subscriber": false,
+    "Medal": "Guardian [1]"
+  },
     {
       "id": 4,
       "solo_competitive_rank": null,
@@ -110,12 +173,16 @@ export class PLayersComponent implements OnInit {
       "profile_is_subscriber": false,
       "Medal": "Legend [3]"
     }
+
   ]*/
 
 
   }
+
   async setmedaimage(){
-return  new Promise((resolve,reject)=>{
+
+  return new Promise((resolve,reject)=>{
+
   this.players.forEach((player: any) =>
     {
 
@@ -135,6 +202,7 @@ return  new Promise((resolve,reject)=>{
       player["star_image"] = this.starts[medalNumber];
 
   }
+
  } );
  resolve(true)
 })
