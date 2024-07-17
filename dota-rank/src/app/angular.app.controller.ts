@@ -12,7 +12,7 @@ export class AngularAPpControllers {
     res.sendFile(indexHtml+"/index.html");
   }
   @Get('home/default')
-  serveAngularApp(@Res() res: Response) {
+  angularroute(@Res() res: Response) {
     const indexHtml = join(__dirname,'..', 'angular-app');
     res.sendFile(indexHtml+"/index.html");
   }
