@@ -7,6 +7,7 @@ import { HttpModule } from '@nestjs/axios';
 import { PlayerService } from './players/player.service';
 import { DotaService } from './Dota/dota.service';
 import { PlayerController } from './players/player.controller';
+import { AngularAPpControllers } from './app/angular.app.controller';
 
 
 @Module({
@@ -31,7 +32,7 @@ import { PlayerController } from './players/player.controller';
 HttpModule
 
   ],
-  controllers: [AppController,PlayerController],
+  controllers: [AppController,PlayerController,AngularAPpControllers],
   providers: [AppService,PlayerService,DotaService],
 })
 export class AppModule {}
