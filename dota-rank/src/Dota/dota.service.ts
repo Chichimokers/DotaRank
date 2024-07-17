@@ -58,12 +58,14 @@ export class DotaService {
              this.httpService.axiosRef.get(url).then((response)=>{
                 if(response){
                   
-
+                console.log("hay respuesta")
                 resolve(response.data);
                
 
                 }
-                },(error)=>{
+                },
+                (error)=>{
+              console.log(error)
               resolve({
                 "solo_competitive_rank": "PRIVATE",
                 "competitive_rank": "PRIVATE",
@@ -90,8 +92,7 @@ export class DotaService {
 
               );
             }catch{
-              resolve({
-                "solo_competitive_rank": "PRIVATE",
+              resolve({    "solo_competitive_rank": "PRIVATE",
                 "competitive_rank": "PRIVATE",
                 "rank_tier": "PRIVATE",
                 "leaderboard_rank": "PRIVATE",
@@ -109,8 +110,7 @@ export class DotaService {
                 "profile_loccountrycode": "PRIVATE",
                 "profile_is_contributor": "PRIVATE",
                 "profile_is_subscriber": "PRIVATE",
-                "Medal": "PRIVATE"
-            })
+                "Medal": "PRIVATE"})
 
             }
             
