@@ -1,5 +1,5 @@
-<h1 *ngFor="let item of players; let i = index" class="player" style="display: flex; align-items: center;">
-  <h2 style="margin: 5px;">{{i+1}}</h2>
+<div *ngFor="let item of players; let i = index" class="player" style="display: flex; align-items: center; width: 500px; height: 50px;">
+  <h2 style="margin: 1px;">{{i+1}}</h2>
 
   <img [src]="item.profile_avatar" class="profile">
 
@@ -11,4 +11,4 @@
     <image [attr.xlink:href]="item.medal_image" height="100%" width="100%">
     </image>
   </svg>
-</h1>
+</div>
