@@ -67,26 +67,7 @@ export class DotaService {
                 (error)=>{
               console.log(error)
               resolve({
-                "profile": {
-                "account_id": "PRIVATE",
-                "personaname": "PRIVATE",
-                "name": null,
-                "plus": "PRIVATE",
-                "cheese": "PRIVATE",
-                "steamid": "PRIVATE",
-                "avatar": "PRIVATE",
-                "avatarmedium": "PRIVATE",
-                "avatarfull": "PRIVATE",
-                "profileurl": "PRIVATE",
-                "last_login": "PRIVATE",
-                "loccountrycode": "PRIVATE",
-                "status": "PRIVATE",
-                "fh_unavailable": "PRIVATE",
-                "is_contributor": "PRIVATE",
-                "is_subscriber": "PRIVATE"
-                },
-                "rank_tier": "PRIVATE",
-                "leaderboard_rank": "PRIVATE"
+              "msg":"error"
                 })
              }
 
@@ -94,28 +75,8 @@ export class DotaService {
               );
             }catch{
               resolve({
-                "profile": {
-                "account_id": "PRIVATE",
-                "personaname": "PRIVATE",
-                "name": null,
-                "plus": "PRIVATE",
-                "cheese": "PRIVATE",
-                "steamid": "PRIVATE",
-                "avatar": "PRIVATE",
-                "avatarmedium": "PRIVATE",
-                "avatarfull": "PRIVATE",
-                "profileurl": "PRIVATE",
-                "last_login": "PRIVATE",
-                "loccountrycode": "PRIVATE",
-                "status": "PRIVATE",
-                "fh_unavailable": "PRIVATE",
-                "is_contributor": "PRIVATE",
-                "is_subscriber": "PRIVATE"
-                },
-                "rank_tier": "PRIVATE",
-                "leaderboard_rank": "PRIVATE"
-                })
-
+                "msg":"error"
+                  })
             }
             
          
