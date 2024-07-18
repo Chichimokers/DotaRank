@@ -32,7 +32,7 @@ import { AngularAPpControllers } from './app/angular.app.controller';
 HttpModule
 
   ],
-  controllers: [AppController,PlayerController,AngularAPpControllers],
+  controllers: [PlayerController,AngularAPpControllers],
   providers: [AppService,PlayerService,DotaService],
 })
 export class AppModule {}
