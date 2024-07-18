@@ -1,0 +1,84 @@
+/* You can add global styles to this file, and also import other style files */
+/* General Colors */
+:root {
+  --color-background: #1e1e1e;
+  --color-foreground: #d4d4d4;
+  --color-accent: #007acc;
+  --color-border: #404040;
+}
+
+/* Body Styles */
+body {
+
+    margin: 0;
+    padding: 0;
+    background-image: url('/assets/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    color: var(--color-foreground);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  padding: 1rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* Navigation Styles */
+nav {
+  background-color: var(--color-background);
+  border-right: 1px solid var(--color-border);
+}
+
+nav a {
+  color: var(--color-foreground);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: block;
+}
+
+nav a:hover {
+  background-color: var(--color-border);
+}
+
+/* Main Content Styles */
+main {
+  padding: 1rem;
+}
+
+/* Button Styles */
+button {
+  background-color: var(--color-accent);
+  color: var(--color-foreground);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0059a3;
+}
+
+/* Input Styles */
+input, textarea {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  border: 1px solid var(--color-border);
+  padding: 0.5rem;
+}
+
+/* Footer Styles */
+footer {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid var(--color-border);
+}

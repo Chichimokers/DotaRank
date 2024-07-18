@@ -1,0 +1,13 @@
+<h1 *ngFor="let item of players; let i = index" class="player" style="display: flex; align-items: center;">
+  <h2 style="margin: 5px;">{{i+1}}</h2>
+
+  <img src="{{item.profile_avatar}}" class="profile">
+
+  {{item.profile_personaname}}
+
+  <svg viewBox="0 0 256 256" style="max-width: 90px; max-height: 90px; margin-left: auto;">
+    <image [attr.href]="item.star_image" height="100%" width="100%"></image>
+    <image [attr.href]="item.medal_image" height="100%" width="100%"></image>
+  </svg>
+
+</h1>
