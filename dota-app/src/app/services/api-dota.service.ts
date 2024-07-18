@@ -8,7 +8,7 @@ import { Observable ,throwError,catchError} from 'rxjs';
   providedIn: 'root'
 })
 export class ApiDotaService {
-  api : any  = "http://localhost:3000";
+  api : any  = "https://dotarank.onrender.com";
 
   constructor(private http:  HttpClient) { }
    GetPLayers() : Observable<any>{
