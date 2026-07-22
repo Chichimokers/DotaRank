@@ -1,15 +1,20 @@
 # DotaRank
 
-## Tecnologias
-
-- CSS
-- HTML
-- JavaScript
-- TypeScript
+## Lenguajes
+- {'size': 2086, 'node': {'name': 'HTML'}}
+- {'size': 25162, 'node': {'name': 'TypeScript'}}
+- {'size': 3192, 'node': {'name': 'CSS'}}
+- {'size': 663, 'node': {'name': 'JavaScript'}}
 
 ## Instalacion
 
-Clona el repositorio y sigue las instrucciones especificas del proyecto.
+```bash
+git clone https://github.com/Chichimokers/DotaRank.git
+cd DotaRank
+pip install -r requirements.txt  # o npm install
+python run.py  # o npm run dev
+```
 
 ---
-(c) 2026 Chichimokers -- https://github.com/Chichimokers/DotaRank
+
+(c) 2026 Chichimokers - Proyecto Privado
